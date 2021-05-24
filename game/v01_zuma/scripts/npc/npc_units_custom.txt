@@ -1,0 +1,45 @@
+// Units File
+"DOTAUnits"
+{
+	"Version"	"1"
+	
+	//=================================================================================	
+	// Creature: Gnoll Assassin
+	//=================================================================================
+	"npc_dota_dummy"
+	{
+		// General
+		//
+		"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
+		"Model"						"models/development/invisiblebox.vmdl"	// Model.
+		"SoundSet"					"0"					// Name of sound set.
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"VisionDaytimeRange"		"0"		// Range of vision during day light.
+		"VisionNighttimeRange"		"0"		// Range of vision at night time.
+		"MinimapIcon"				"minimap_plaincircle"
+	}
+	"npc_dota_ball"
+	{
+		"Name"									"ball"
+		"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
+		"Model"						"models/heroes/wisp/wisp.vmdl"	// Model.
+		"ModelScale"				"1"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"							"400"
+		"AttackDamageTypeCustom"				"Physical"
+		"PhysicalAttack"						"0"
+		"MagicalAttack"							"0"
+		"PhysicalArmor"							"0"
+		"MagicalArmor"							"0"
+		"AttackRate"							"1"
+		"AttackAnimationPoint"					"0.3"
+		"AttackCapabilities"					"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackRange"							"128"
+		"AttackAcquisitionRange"				"400"
+		"StatusMana"							"100"
+		"StatusManaRegen"						"10"
+		"BoundsHullName"						"DOTA_HULL_SIZE_REGULAR"
+	}
+}
